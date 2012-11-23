@@ -42,7 +42,7 @@ Mario.CollectionView = Mario.View.extend({
     return this.addItemView(item, ItemView, index);
   },
 
-  // Override from `Marionette.View` to guarantee the `onShow` method
+  // Override from `Mario.View` to guarantee the `onShow` method
   // of child views is called.
   onShowCalled: function(){
     this.onShowCallbacks.run();
