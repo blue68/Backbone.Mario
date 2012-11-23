@@ -1,0 +1,30 @@
+{
+  "name": "Backbone.Mario",
+  "version": "1.0.0",
+  "description": "a Extjs like MVC framework base on backbone.js",
+  "homepage" : "https://github.com/qtalen/Backbone.Mario",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qtalen/Backbone.Mario.git"
+  },
+  "keywords": [
+  	"backbone",
+	"mvc",
+	"ria",
+    "Mario"
+  ],
+  "author": {
+  	"name" : "peng.qianp",
+	"account" : "qtalen",
+	"email" : "qtalen@163.com"
+  },
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.3.18a",
+    "grunt-jasmine-runner": "latest",
+    "grunt-rigger": "*"
+  }
+}
