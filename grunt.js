@@ -77,6 +77,6 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'lint rig min');
+  grunt.registerTask('default', 'rig min');
 
 };
