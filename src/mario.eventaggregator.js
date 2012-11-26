@@ -8,7 +8,7 @@
 Mario.EventAggregator = Backbone.Wreqr.EventAggregator.extend({
 
   constructor: function(){
-    Marionette.addEventBinder(this);
+    Mario.addEventBinder(this);
     Backbone.Wreqr.EventAggregator.prototype.constructor.apply(this, arguments);
   }
 

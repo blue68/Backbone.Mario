@@ -1,0 +1,144 @@
+body {
+	background-color : #F6F6F6;
+}
+.header > div {
+	height : 70px;
+	background-color : #13A0E1;
+}
+.header-inner {
+	padding : 20px 0 15px 0;
+	color : #ffffff;
+	line-height : 35px;
+}
+.logo {
+	font-size : 2.5em;
+	color : #ffffff;
+}
+.header-inner ul {
+	float : left;
+	list-style : none;
+	margin : 15px 0 0 10px;
+	font-size : 20px;
+}
+.header-inner li {
+	float : left;
+	margin : 0 0 0 20px;
+	opacity : 0.7;
+}
+.header-inner li:hover {
+	opacity : 1;
+	text-shadow : 0px 1px 5px #ffffff;
+	cursor : pointer;
+}
+.header-inner input.content-search {
+	margin : 0;
+	width : 210px;
+	height : 33px;
+	padding-right : 30px;
+	background : #C4E7F7 url('../images/nav_search.png') no-repeat 215px 10px;
+}
+
+
+.main {
+	margin : 25px 0 50px 0;
+}
+
+.public  {
+	margin-bottom : 30px;
+}
+.public textarea {
+	width : 520px;
+	height : 90px;
+	margin-right : 7px;
+}
+.public .btn {
+	width : 90px;
+}
+
+.reports .report {
+	margin-top : 20px;
+}
+.report {
+	padding : 0 0 0 86px;
+	position : relative;
+}
+.report .avatar {
+	position : absolute;
+	left : 0px;
+	top : 0px;
+	width : 66px;
+	height : 66px;
+	border-radius : 5px;
+	box-shadow : 1px 1px 1px #999999;
+}
+.report .content {
+	width : 535px;
+	min-height : 90px;
+	background-color : #ffffff;
+	border : 1px solid #cccccc;
+	border-radius : 5px;
+	box-shadow : 1px 2px 2px #cccccc;
+	position : relative;
+}
+.report .content-inner {
+	padding : 15px 20px 50px 20px;
+}
+.report .content-inner h3 {
+	font-size : 1.1em;
+	font-weight : normal;
+	line-height : 20px;
+}
+.report .sub-title {
+	color : #999999;
+}
+.report .date {
+	position : absolute;
+	bottom : 15px;
+	right : 15px;
+}
+.report:after {
+	content : "\00A0";
+	position : absolute;
+	background : url("../images/arrow.png") no-repeat;
+	width : 12px;
+	height : 23px;
+	left : 75px;
+	top : 10px;
+}
+.side-nav {
+	width : 250px;
+	border : 1px solid #E5E5E5;
+	border-radius : 5px;
+	box-shadow : 0 1px 4px rgba(0, 0, 0, 0.067);
+	margin-left : 50px;
+	padding : 0px;
+}
+.side-nav > li > input {
+	border-radius : 5px 5px 0 0;
+	margin : 0px;
+	height : 30px;
+	width : 207px;
+	padding-left : 35px;
+	background : #FFFFFF url("../images/side_search.png") no-repeat scroll 10px 8px;
+}
+.side-nav > li > a {
+	border: 1px solid #E5E5E5;
+    display: block;
+    margin: 0 0 -1px;
+    padding: 8px 14px;
+	line-height : 30px;
+}
+.side-nav > li > i {
+	float : right;
+	color : #999999;
+	font-size : 25px;
+	margin-right : 15px;
+	margin-top : 15px;
+}
+.footer > div {
+	height : 120px;
+	background-color : #13A0E1;
+}
+.footer .container {
+	padding : 40px 0;
+}

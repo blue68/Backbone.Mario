@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */'
     },
     lint: {
-      files: ['grunt.js', 'src/mario.*.js']
+      files: ['src/mario.*.js']
     },
     rig : {
     	core_build : {

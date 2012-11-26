@@ -47,7 +47,7 @@ Mario.ItemView =  Mario.View.extend({
     data = this.mixinTemplateHelpers(data);
 
     var template = this.getTemplate();
-    var html = Marionette.Renderer.render(template, data);
+    var html = Mario.Renderer.render(template, data);
     this.$el.html(html);
     this.bindUIElements();
 
