@@ -34,10 +34,44 @@ module.exports = function(grunt) {
     	}
     },
     jasmine : {
-    	specs : 'spec/test.spec.js',
+    	src : [
+	        'public/javascripts/jquery.js',
+	        'public/javascripts/json2.js',
+	        'public/javascripts/underscore.js',
+	        'public/javascripts/backbone.js',
+	        'public/javascripts/backbone.babysitter.js',
+	        'public/javascripts/backbone.augment.js',
+	        'public/javascripts/backbone.eventbinder.js',
+	        'public/javascripts/backbone.wreqr.js',
+	        'src/build/mario.core.js',
+	        'spec/javascripts/support/mario.support.js',
+	        'src/mario.helpers.js',
+	        'src/mario.createObject.js',
+	        'src/mario.triggermethod.js',
+	        'src/mario.eventbinder.js',
+	        'src/mario.eventaggregator.js',
+	        'src/mario.controller.js',
+	        'src/mario.view.js',
+	        'src/mario.itemview.js',
+	        'src/mario.collectionview.js',
+	        'src/mario.compositeview.js',
+	        'src/mario.region.js',
+	        'src/mario.layout.js',
+	        'src/mario.application.js',
+	        'src/mario.approuter.js',
+	        'src/mario.module.js',
+	        'src/mario.templatecache.js',
+	        'src/mario.renderer.js',
+	        'src/mario.callbacks.js'
+	      ],
+	      helpers : 'spec/javascripts/helpers/*.js',
+	      specs : 'spec/javascripts/**/*.spec.js',
     	junit : {
 		    output : 'unit_test_report/'
 		}
+    },
+    'jasmine-server' : {
+      browser : false
     },
     min: {
       core_standard : {

@@ -1,0 +1,1 @@
+Mario = Backbone.Mario;
