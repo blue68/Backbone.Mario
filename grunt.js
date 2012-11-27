@@ -34,7 +34,10 @@ module.exports = function(grunt) {
     	}
     },
     jasmine : {
-    	specs : 'spec/test.spec.js'
+    	specs : 'spec/test.spec.js',
+    	junit : {
+		    output : 'unit_test_report/'
+		}
     },
     min: {
       core_standard : {
@@ -81,6 +84,6 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'rig min jasmine');
+  grunt.registerTask('default', 'jasmine rig min');
 
 };
