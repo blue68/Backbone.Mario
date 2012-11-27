@@ -7,6 +7,7 @@ node_modules/
 ## jasmine report
 ###############
 _SpecRunner.html
+unit_test_report/
 
 
 #################
