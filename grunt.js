@@ -1,6 +1,7 @@
 /*global module:false*/
 module.exports = function(grunt) {
   	grunt.loadNpmTasks('grunt-rigger');
+  	grunt.loadNpmTasks('grunt-jasmine-runner');
   // Project configuration.
   grunt.initConfig({
     pkg: '<json:package.json>',
@@ -31,6 +32,9 @@ module.exports = function(grunt) {
     		src : ['<banner:meta.banner>', 'src/build/amd.js'],
     		dest : 'lib/amd/backbone.mario.js'
     	}
+    },
+    jasmine : {
+    	specs : 'spec/test.spec.js'
     },
     min: {
       core_standard : {
@@ -77,6 +81,6 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'rig min');
+  grunt.registerTask('default', 'rig min jasmine');
 
 };

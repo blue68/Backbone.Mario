@@ -3,6 +3,11 @@
 #############
 node_modules/
 
+#############
+## jasmine report
+###############
+_SpecRunner.html
+
 
 #################
 ## Eclipse
