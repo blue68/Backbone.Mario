@@ -119,6 +119,6 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'lint jasmine rig min');
+  grunt.registerTask('default', 'jasmine rig min');
 
 };

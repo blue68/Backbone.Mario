@@ -7,10 +7,6 @@
    *
    */
 Mario.FormView = Mario.ItemView.extend({
-	tagName : 'form',
-	
-	className : 'formView',
-	
 	defaults : {
 		field : {
 			validateOn : 'submit'
