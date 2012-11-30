@@ -57,6 +57,7 @@ module.exports = function(grunt) {
 	        'src/mario.compositeview.js',
 	        'src/mario.region.js',
 	        'src/mario.layout.js',
+	        'src/mario.formview.js',
 	        'src/mario.application.js',
 	        'src/mario.approuter.js',
 	        'src/mario.module.js',
@@ -109,7 +110,7 @@ module.exports = function(grunt) {
         jQuery: true,
         Backbone: true,
         _: true,
-        Marionette: true,
+        Mario: true,
         $: true,
         slice: true
       }
@@ -118,6 +119,6 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'jasmine rig min');
+  grunt.registerTask('default', 'lint jasmine rig min');
 
 };

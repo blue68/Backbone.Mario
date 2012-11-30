@@ -8,6 +8,7 @@ node_modules/
 ###############
 _SpecRunner.html
 unit_test_report/
+.tmp_*
 
 
 #################
