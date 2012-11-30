@@ -37,7 +37,7 @@ module.exports = function(grunt) {
     	src : [
 	        'public/javascripts/jquery.js',
 	        'public/javascripts/json2.js',
-	        'public/javascripts/underscore.js',
+	        'public/javascripts/lodash.min.js',
 	        'public/javascripts/backbone.js',
 	        'public/javascripts/backbone.babysitter.js',
 	        'public/javascripts/backbone.augment.js',
