@@ -37,6 +37,12 @@ Mario.FormView = Mario.ItemView.extend({
 		this.on('item:rendered', this.runInitializers, this);
 	},
 	
+	reconfig : function(opt) {
+		this.model = opt.model || this.model;
+		this.fields = opt.fields || this.fields;
+		this.runInitializers();
+	},
+	
 	changeFieldVal : function(model, fields) {
       var modelProperty = Object.keys(fields.changes),
         field = this.fields[modelProperty],

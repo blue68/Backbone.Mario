@@ -40,6 +40,29 @@ describe("FormView", function () {
 
     expect(form.model.get('fname')).toBe(dataHash.fname);
   });
+  
+  it("Should set a new model to form", function() {
+  	  var fieldsHash = {
+        fname : {
+          el : ".fname"
+        }
+      };
+  	  var model = new Backbone.Model({
+        fname : 'test'
+      });
+     
+      var form = new (Mario.FormView.extend({
+	      template : "#form-template",
+	      fields   : fieldsHash
+	    }))();
+	    form.render();
+	    form.reconfig({
+	    	model : model,
+	    	fields : fieldsHash
+	    });
+	    
+	    expect(form.model.get('fname')).toBe(model.get('fname'));
+  });
 
   it("Should populate fields from model", function () {
     var fieldsHash = {
@@ -56,6 +79,28 @@ describe("FormView", function () {
       model    : model
     }))();
     form.render();
+
+    expect(form.$('.fname').val()).toEqual(model.get('fname'));
+  });
+  
+  it("Should reconfig model and fields to a model", function() {
+  	var fieldsHash = {
+        fname : {
+          el : ".fname"
+        }
+      };
+    var model = new Backbone.Model();
+    model.set('fname','foo');
+
+    var form = new (Mario.FormView.extend({
+      template : "#form-template"
+    }))();
+    form.render();
+    
+    form.reconfig({
+    	fields : fieldsHash,
+    	model : model
+    });
 
     expect(form.$('.fname').val()).toEqual(model.get('fname'));
   });
